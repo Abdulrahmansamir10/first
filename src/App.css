@@ -1,38 +1,447 @@
-.App {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.load{
+  display:flex; 
+  justify-content:center;
+  align-items: center;
+  margin: 20%;
+}
+.nav-link , .nav-item{
+  margin-right: 10px;
+  font-weight: bold;
+}
+.nav-item, .nav-link:hover{
+ color: #e22104 !important;
+  
+}
+
+.sec1{
+  background-image: url("D:\Web Develobment\project for react\first\public\images\home-banner.jpg");
+  width: 100%;
+  height: 118vh;
+  color: #fff;
+  position: relative;
+}
+.sec1 hr{
+  width: 20%;
+margin-left: 250px;
+}
+
+.text{
+  position: absolute;
+  text-align: center;
+  margin-top: 25%;
+  margin-left: 25%;
+}
+.text h1{
+  color: #ffffff;
+  font: 60px Heebo, sans-serif;
+  margin: 0px 0px 8px;
+}
+
+button{
+    display: inline-block;
+    background: #e22104;
+    padding: 12px 51px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 48px;
+    border-radius: 0px;
+    outline: none ;
+    box-shadow: none ;
+    text-align: center;
+    border: 1px solid #e22104;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    transition: all 300ms linear 0s;
+
+}
+.sec1 button{
+  border-radius:6px;
+}
+.sec1 button:hover{
+  background-color: #fff;
+  color: #e22104;
+  font-size: 15px;
+  font-weight: 400;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sec2{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+.sec2 button:hover{
+  background-color: #fff;
+  color: #e22104;
+  border: 1px solid #e22104;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  transition:all 300ms linear 0s;
+}
+.sec2 button{
+  border-radius:5px;
+}
+.sect2 {
+ margin-top: 150px;
+}
+
+.sec3{
+  height: 100vh;
+  background-color: #f7f7f7; 
+}
+.line h3,p{
+  text-align: center;
+  margin-top: 70px;
+ 
+ 
+}
+.carde{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 70px;
+}
+.card{
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 50px 25px;
+}
+.card:hover{
+  border: 1px solid #e22104;
+}
+.imo{
+  width: 70px;
+  vertical-align: middle;
+  border-style: none;
+}
+.imo3{
+  width: 50px;
+}
+.card-text{
+  margin-top: 30px;
+}
+
+.sec4{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-image: url('D:\Web Develobment\project for react\first\public\images\bg1.jpg');
+  margin-top: 50px;
+}
+.sec4 img{
+  margin-left:20px ;
+}
+.mas{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.mas h4{
+  color:#e22104;
+  font-size: 25px;
+  font-weight: bold;
+}
+.sec4 p ,.mas h6{
+  color:#888888
+}
+
+
+
+.sec1p{
+  height: 210vh;
+}
+.lin{
+  display: flex;
+  margin-left: 75px;
+  
+}
+.line h3{
+font-weight: bold;
+color: #202e31;
+}
+.line p{
+  font: 14px Roboto, sans-serif;
+  color: #888888;
+}
+.nav-link2{
+  margin-right: 38px;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  text-decoration: none;
+  color: #000000;
+}
+.nav-link2:hover{
+  color: #e22104
+}
+.project{
+  display: flex !important;
+  flex-wrap: wrap;
+ margin: 10px 20px 10px 20px;
+}
+ .single_portfolio img{
+  width: 620px !important;
+}
+.single_portfolio {
+  position: relative;
+  margin-bottom: 30px;
+}
+.single_portfolio .short_info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear 0s;
+  background: #fff;
+  width: 370px;
+  padding: 20px 37px;
+  transition: all 300ms linear 0s;
+}
+.single_portfolio:hover .short_info {
+  opacity: 1;
+  visibility: visible;
+}
+.short_info p {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: #e22104;
+  text-align: start;
+  margin-bottom: 10px;
+}
+ .short_info h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+ 
+}
+ .short_info h4 a {
+  color: #202e31;
+  text-decoration: none;
+}
+ 
+.sec5{
+  background-color: #8888881e;
+  height: 100vh;
+}
+.box-1 {
+  background-color: #ffffff;
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: -2px 5.7px 20px 0 rgba(9, 30, 170, 0.05);
+  background-image: url("D:\Web Develobment\project for react\first\public\images\cotation.png");
+  background-position:100% -128% ;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+ 
+
+}
+.rev{
+  display: flex;
+  position:relative;
+  margin-right: -5px;
+  margin-left: -17px;
+  margin-top: 50px;
+  text-align: start;
+}
+
+.tt img{
+  position: absolute;
+  margin-left: -480px;
+  margin-top: 25px;
+  width: 90px;
+  border-radius: 100%;
+}
+.textt{
+  position: absolute;
+  margin-left: 170px;
+  margin-top: 20px;
+}
+.textt h4{
+  color: #202e31;
+  font: 20px heebo, sans-serif;
+  margin: 0px 0px 5px;
+}
+.textt p{
+  color: #888888;
+  font: 14px roboto, sans-serif;
+  margin: 0px 0px 16px;
+  text-align: start;
+}
+.div5{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.sec6{
+  height: 140vh;
+}
+.work{
+ display: flex;
+}
+.hash{
+  display: flex;
+  margin: 20px;
+  text-decoration: none;
+  color: #999;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.hash1{
+  display: flex;
+  margin: 20px;
+  text-decoration: none;
+  color: #999;
+  margin-left:-2px;
+  margin-top: 30px;
+}
+.hash p{
+margin-left: 15px;
+}
+.hash1 p{
+  margin-left: 15px;
+  }
+.spn{
+  margin: 20px;
+  color: #999;
+  margin-left: 2px;
+  margin-top: 30px;
+}
+div h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #202e31;
+    margin-top: -10px;
+}
+div h4:hover{
+  color: #e22104;
+}
+.texth4{
+  text-decoration: none;
+}
+.pos{
+  display: flex;
+  justify-content: space-around;
+}
+.images img{
+  width: 420px;
+  border-radius: 7px;
+}
+.con input{
+  border: none;
+  outline: none;
+  border-bottom: 0.8px solid #ac9784;
+  width: 500px;
+  margin: 10px 0;
+}
+.con .but{
+  border: none;
+  background-color: #e22104;
+  border-radius: 20px;
+  color: #fff;
+  padding: 14px 55px;
+  font-size: 19px;
+  text-transform: uppercase;
+  width: 170px;
+}
+.message{
+  width: 500px;
+  height: 150px;
+}
+.cou{
+  display: flex;
+  justify-content: space-around;
+}
+.map{
+  width: 750px;
+  height: 400px;
+}
+.chat{
+  border: none;
+  background-color: #e22104;
+  border-radius: 20px;
+  color: #fff;
+  padding: 14px 55px;
+  font-size: 19px;
+  text-transform: uppercase;
+  width: 170px;
+}
+.sec7{
+  color: #888888;
+  background-color: #16191a;
+  padding: 125px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  height: 80vh;
+  align-items: center;
+}
+.link{
+  display: flex;
+  text-decoration: none;
+}
+.link li{
+  display: flex;
+  text-decoration: none;
+}
+hr{
+  width: 100%;
+}
+.sub input{
+background: #353535;
+padding: 10px 2px 10px 20px;
+
+}
+.sub button{
+  color: #ffffff;
+  font: 13px heebo, sans-serif;
+  background: #e22104;
+  margin: 0px 0px 0px 7px;
+  padding: 16px 25px 14px 20px;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.pri{
+  text-decoration: none;
+  color: #e22104;
+  font: 14px Roboto, sans-serif;
+
+}
+.footer{
+  color: #888888;
+  font: 14px Roboto, sans-serif;
+  background: #111314;
+  padding: 27px 0px;
+}
+.footer i,span{
+  color: #e22104;
+}
+.footer p{
+  color: #ffffff;
+  font: 14px Roboto, sans-serif;
+  padding: 0px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
